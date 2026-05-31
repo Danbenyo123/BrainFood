@@ -1,21 +1,13 @@
 import { useState } from 'react'
 import './App.css'
+import NavHeader from './componenets/NavHeader'
 
 function App() {
   const [count, setCount] = useState(0)
 
   return (
     <>
-      <header>
-        <nav>
-          <ul className='menu'>
-            <li>Home</li>
-            <li>About</li>
-            <li>My Notes</li>
-            <li>Settings</li>
-          </ul>
-        </nav>
-      </header>
+      <NavHeader/>
       <main>
         <h2>Main Content</h2>
       </main>
