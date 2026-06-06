@@ -1,0 +1,16 @@
+services:
+  db:
+    image: pgvector/pgvector:pg17
+    container_name: brainfood-db
+    restart: unless-stopped
+    environment:
+      POSTGRES_USER: danbenyo
+      POSTGRES_PASSWORD: Aa123456
+      POSTGRES_DB: brainfood
+    ports:
+      - "5432:5432"
+    volumes:
+      - brainfood-pgdata:/var/lib/postgresql/data
+
+volumes:
+  brainfood-pgdata:
