@@ -3,7 +3,8 @@ const Note = ({note}) => {
         <div className="note">
             <h1>{note.title}</h1>
             <section>
-                <p>{note.body}</p>
+                <p>{note.content}</p>
+                <p className="comment">{note.created_at}</p>
             </section>
             <div className="note-buttons">
                 <button>Delete</button>

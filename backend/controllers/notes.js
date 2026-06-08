@@ -8,16 +8,16 @@ exports.getNotes = async (req,res,next) => {
         const notesDB = await pool.query(
             'SELECT * FROM notes;'
         );
+        res.status(200).json({
+            success: true,
+            data: notesDB.rows
+        });
     } catch (err) {
         res.status(500).json({
             success: false,
             error: `Error: ${err}`
         })
     }
-    res.status(200).json({
-        success: true,
-        data: notesDB.rows
-    });
 }
 
 // @desc    Get Single note
