@@ -12,16 +12,16 @@ const NotesGrid = ({notes,setNotes}) => {
         setNotes(notesArray);
         
   } catch (err) {
-    console.error(err);
+    console.error(err.message);
   }
     };
   fetchNotes();
   },[])
-    console.log(notes);
+
     return ( 
-       <div className="notesGrid">
+       <div className="grid grid-cols-3 gap-4 m-5">
         {notes.map((note) => (
-          <Note note={note}/>
+          <Note notes={notes} setNotes={setNotes} key={note.id} note={note}/>
         ))}
        </div>
      );

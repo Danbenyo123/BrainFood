@@ -1,20 +1,23 @@
 import { useState } from 'react';
-import './App.css';
-import NavHeader from './componenets/NavHeader';
-import NotesGrid from './componenets/NotesGrid';
+
+import NavHeader from './components/NavHeader';
+import ActionsHeader from './components/ActionsHeader';
+import NotesGrid from './components/NotesGrid';
+import Footer from './components/Footer';
 
 function App() {
   const [notes,setNotes] = useState([]);
+
+
   return (
     <>
       <NavHeader/>
       <main>
-        <h2>Main Content</h2>
+        <h1>Main Content</h1>
+        <ActionsHeader setNotes={setNotes}/>
         <NotesGrid notes={notes} setNotes = {setNotes}/>
       </main>
-      <footer>
-        <h3>Footer content</h3>
-      </footer>
+      <Footer/>
     </>
   )
 }
