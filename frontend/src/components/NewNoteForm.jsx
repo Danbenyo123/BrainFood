@@ -32,7 +32,7 @@ const NewNoteForm = ({setNotes,setAddNote}) => {
     return ( <form onSubmit={handleSubmit} className="m-5 flex flex-col justify-center w-50 gap-2">
         <input className="bg-white/10 p-1 rounded" type="text" onChange={(e)=>(setTitle(e.target.value))} value={title} name="title" id="title" placeholder="Title"/>
         <textarea className="bg-white/10 p-1 min-w-3xs min-h-20 rounded" type="text" onChange={(e)=>(setContent(e.target.value))} value={content} name="content" id="content" placeholder="Content"/>
-        <input disabled={!title.trim() || !content.trim()} className=" bg-white/5 p-1 rounded" type="submit" value="Add New Note"/>
+        <input disabled={!title.trim() || !content.trim()} className=" text-white bg-white/5 p-1 rounded disabled:text-white/9" type="submit" value="Add New Note"/>
         {error && <p>{error}</p>}
     </form> );
 }
