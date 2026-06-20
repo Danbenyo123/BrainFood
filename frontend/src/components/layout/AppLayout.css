@@ -1,0 +1,29 @@
+.bf-app-shell {
+  min-height: 100vh;
+  width: 100%;
+  background: var(--color-desk);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 44px;
+  box-sizing: border-box;
+}
+
+.bf-app-screen {
+  position: relative;
+  width: 100%;
+  max-width: 1040px;
+  min-height: 720px;
+  background: var(--color-paper);
+  border-radius: var(--radius-screen);
+  box-shadow: var(--shadow-resting);
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+}
+
+.bf-app-content {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+}

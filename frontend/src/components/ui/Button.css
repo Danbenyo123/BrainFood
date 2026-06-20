@@ -1,0 +1,50 @@
+.bf-btn {
+  display: inline-flex;
+  align-items: center;
+  gap: 7px;
+  font-family: var(--font-sans);
+  font-weight: 600;
+  font-size: var(--text-ui);
+  border-radius: var(--radius-pill);
+  cursor: pointer;
+  border: none;
+  transition: var(--transition-hover);
+  padding: 9px 20px;
+  white-space: nowrap;
+}
+
+/* primary: ink fill → ember on hover */
+.bf-btn--primary {
+  background: var(--color-ink);
+  color: var(--color-paper);
+}
+.bf-btn--primary:hover { background: var(--color-ember); }
+
+/* secondary: outline pill → inverts on hover */
+.bf-btn--secondary {
+  background: var(--color-canvas);
+  color: var(--color-ink);
+  border: 1.5px solid var(--color-border);
+}
+.bf-btn--secondary:hover {
+  background: var(--color-ink);
+  color: var(--color-paper);
+  border-color: var(--color-ink);
+}
+
+/* ghost-destructive: whisper → ember on hover */
+.bf-btn--ghost-destructive {
+  background: transparent;
+  color: var(--color-whisper);
+  padding: 0;
+  font-size: 13px;
+  font-weight: 400;
+}
+.bf-btn--ghost-destructive:hover { color: var(--color-ember); }
+
+/* ember: ember fill → ember-dark on hover (delete confirm) */
+.bf-btn--ember {
+  background: var(--color-ember);
+  color: var(--color-paper);
+}
+.bf-btn--ember:hover { background: var(--color-ember-dark); }

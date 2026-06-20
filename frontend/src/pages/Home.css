@@ -1,0 +1,7 @@
+.bf-home__heading {
+  font-family: var(--font-serif);
+  font-size: var(--text-page);
+  color: var(--color-primary);
+  line-height: 1;
+  padding: 30px 36px 26px;
+}

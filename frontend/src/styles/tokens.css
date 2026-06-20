@@ -1,0 +1,75 @@
+/* =============================================
+   brainfood — design system tokens
+   ============================================= */
+
+:root {
+  /* surfaces */
+  --color-desk:    #e7e5df;
+  --color-paper:   #faf8f4;
+  --color-canvas:  #fdfdfb;
+  --color-hover:   #f1ede5;
+
+  /* ink & accent */
+  --color-ink:         #2b2b2b;
+  --color-ember:       #c2502a;
+  --color-ember-dark:  #a8402a;
+
+  /* text tones */
+  --color-primary:   #2b2b2b;
+  --color-secondary: #6b675f;
+  --color-muted:     #857f76;
+  --color-label:     #a8a39a;
+  --color-whisper:   #c4c0b7;
+  --color-wordmark:  #9a958c;
+
+  /* borders */
+  --color-border:        #d8d4cb;
+  --color-border-soft:   #ece8df;
+  --color-border-dashed: #cbc7be;
+  --color-separator:     #d8d4cb;
+
+  /* typography */
+  --font-serif: 'Newsreader', serif;
+  --font-sans:  'Hanken Grotesk', sans-serif;
+
+  /* type scale */
+  --text-page:   42px;
+  --text-title:  34px;
+  --text-card:   21px;
+  --text-body:   18px;
+  --text-ui:     14px;
+  --text-meta:   12px;
+  --text-eyebrow: 11px;
+
+  /* radii */
+  --radius-pill:   22px;
+  --radius-screen: 16px;
+  --radius-card:   12px;
+  --radius-input:  10px;
+  --radius-menu:   12px;
+  --radius-nav:     8px;
+  --radius-toggle:  9px;
+  --radius-tag:    16px;
+  --radius-modal:  14px;
+
+  /* shadows */
+  --shadow-resting: 0 1px 2px rgba(0,0,0,.04), 0 8px 30px rgba(0,0,0,.05);
+  --shadow-lifted:  0 1px 2px rgba(0,0,0,.05), 0 12px 30px rgba(0,0,0,.14);
+  --shadow-modal:   0 1px 2px rgba(0,0,0,.04), 0 24px 60px rgba(0,0,0,.18);
+
+  /* motion */
+  --transition-hover:   color .2s ease, background .2s ease, border-color .2s ease;
+  --transition-panel-w: flex-basis .28s ease, width .28s ease;
+  --transition-opacity: opacity .2s ease;
+  --transition-focus:   border-color .15s ease;
+
+  /* panel sizes */
+  --panel-expanded:  284px;
+  --panel-collapsed:  56px;
+}
+
+/* blinking cursor — the only animation */
+@keyframes bf-blink {
+  0%, 49% { opacity: 1; }
+  50%, 100% { opacity: 0; }
+}

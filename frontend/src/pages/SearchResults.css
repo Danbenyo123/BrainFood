@@ -1,0 +1,18 @@
+.bf-search__heading {
+  padding: 26px 36px 22px;
+}
+
+.bf-search__count {
+  font-size: var(--text-meta);
+  color: var(--color-label);
+  letter-spacing: .4px;
+  margin-bottom: 4px;
+}
+
+.bf-search__query {
+  font-family: var(--font-serif);
+  font-size: var(--text-page);
+  font-style: italic;
+  color: var(--color-primary);
+  line-height: 1;
+}

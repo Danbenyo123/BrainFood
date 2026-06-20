@@ -1,0 +1,82 @@
+.bf-editnote__loading {
+  padding: 60px 36px;
+  color: var(--color-label);
+  font-size: var(--text-ui);
+}
+
+.bf-editnote__layout {
+  flex: 1;
+  display: flex;
+  flex-direction: row;
+  overflow: hidden;
+}
+
+.bf-editnote__main {
+  flex: 1;
+  min-width: 0;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+}
+
+.bf-editnote__content {
+  flex: 1;
+  padding: 16px 56px 80px;
+  overflow-y: auto;
+}
+
+.bf-editnote__title {
+  font-family: var(--font-serif);
+  font-size: var(--text-title);
+  color: var(--color-primary);
+  border: none;
+  background: transparent;
+  padding: 0;
+  width: 100%;
+  margin-bottom: 6px;
+}
+.bf-editnote__title:focus { outline: none; }
+
+.bf-editnote__meta {
+  font-family: var(--font-sans);
+  font-size: var(--text-meta);
+  color: var(--color-whisper);
+  margin-bottom: 20px;
+}
+
+.bf-editnote__body {
+  font-family: var(--font-serif);
+  font-size: var(--text-body);
+  line-height: 1.7;
+  color: #3a382f;
+  border: none;
+  background: transparent;
+  resize: none;
+  width: 100%;
+  min-height: 300px;
+  padding: 0;
+}
+.bf-editnote__body:focus { outline: none; }
+
+.bf-editnote__delete {
+  position: absolute;
+  bottom: 26px;
+  left: 30px;
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  font-family: var(--font-sans);
+  font-size: 13px;
+  color: var(--color-whisper);
+  background: none;
+  border: none;
+  cursor: pointer;
+  transition: color .2s ease;
+}
+.bf-editnote__delete:hover { color: var(--color-ember); }
+
+.bf-editnote__save {
+  position: absolute;
+  bottom: 26px;
+  right: 30px;
+}

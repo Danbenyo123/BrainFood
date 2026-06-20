@@ -1,0 +1,26 @@
+.bf-breadcrumbs {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  padding: 7px 28px 0;
+}
+
+.bf-breadcrumbs__link {
+  font-size: 12px;
+  color: var(--color-label);
+  transition: color .2s ease;
+}
+.bf-breadcrumbs__link:hover { color: var(--color-primary); }
+
+.bf-breadcrumbs__sep {
+  font-size: 10px;
+  color: var(--color-border);
+}
+
+.bf-breadcrumbs__current {
+  display: flex;
+  align-items: center;
+  gap: 4px;
+  font-size: 12px;
+  color: var(--color-primary);
+}

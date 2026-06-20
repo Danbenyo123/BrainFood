@@ -1,0 +1,25 @@
+.bf-notecard {
+  padding: 18px;
+  border-radius: var(--radius-card);
+  cursor: pointer;
+  transition: background .2s ease;
+}
+.bf-notecard:hover { background: var(--color-hover); }
+
+.bf-notecard__title {
+  font-family: var(--font-serif);
+  font-size: var(--text-card);
+  color: var(--color-primary);
+  margin-top: 12px;
+}
+
+.bf-notecard__preview {
+  font-size: 13.5px;
+  line-height: 1.55;
+  color: var(--color-muted);
+  margin-top: 5px;
+  display: -webkit-box;
+  -webkit-line-clamp: 3;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+}

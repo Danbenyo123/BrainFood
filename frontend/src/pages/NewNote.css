@@ -1,0 +1,66 @@
+.bf-newnote {
+  flex: 1;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+}
+
+.bf-newnote__date {
+  font-size: var(--text-meta);
+  color: var(--color-whisper);
+  padding: 6px 28px 0;
+}
+
+.bf-newnote__canvas {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  padding: 44px 56px 80px;
+}
+
+.bf-newnote__title {
+  font-family: var(--font-serif);
+  font-size: 22px;
+  color: var(--color-whisper);
+  border: none;
+  background: transparent;
+  padding: 0;
+  margin-bottom: 30px;
+  width: 100%;
+}
+.bf-newnote__title::placeholder { color: var(--color-whisper); }
+
+.bf-newnote__body-wrap {
+  position: relative;
+  display: flex;
+  flex: 1;
+}
+
+.bf-newnote__body {
+  font-family: var(--font-serif);
+  font-style: italic;
+  font-size: 46px;
+  line-height: 1.1;
+  color: var(--color-primary);
+  border: none;
+  background: transparent;
+  resize: none;
+  width: 100%;
+  min-height: 200px;
+  padding: 0;
+}
+.bf-newnote__body::placeholder { color: transparent; }
+.bf-newnote__body:focus { outline: none; }
+
+.bf-newnote__cursor {
+  position: absolute;
+  top: 8px;
+  left: 0;
+  pointer-events: none;
+}
+
+.bf-newnote__save {
+  position: absolute;
+  bottom: 26px;
+  right: 30px;
+}

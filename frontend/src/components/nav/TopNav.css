@@ -1,0 +1,37 @@
+.bf-topnav {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 26px 36px 0;
+}
+
+.bf-topnav__wordmark {
+  font-family: var(--font-serif);
+  font-style: italic;
+  font-size: 19px;
+  color: var(--color-wordmark);
+  background: none;
+  border: none;
+  cursor: pointer;
+  padding: 0;
+}
+
+.bf-topnav__actions {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+
+.bf-topnav__back {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+  font-family: var(--font-sans);
+  font-size: 13px;
+  color: var(--color-muted);
+  background: none;
+  border: none;
+  cursor: pointer;
+  transition: color .2s ease;
+}
+.bf-topnav__back:hover { color: var(--color-primary); }

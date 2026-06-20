@@ -1,0 +1,7 @@
+.bf-notesgrid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  column-gap: 12px;
+  row-gap: 14px;
+  padding: 0 24px 40px;
+}

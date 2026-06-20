@@ -1,0 +1,41 @@
+.bf-modal-backdrop {
+  position: fixed;
+  inset: 0;
+  background: rgba(43,43,43,.22);
+  backdrop-filter: blur(2px);
+  z-index: 200;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.bf-modal {
+  background: var(--color-canvas);
+  border-radius: var(--radius-modal);
+  padding: 36px 32px;
+  width: 340px;
+  box-shadow: var(--shadow-modal);
+}
+
+.bf-modal__title {
+  font-family: var(--font-serif);
+  font-size: 26px;
+  color: var(--color-primary);
+  margin-bottom: 10px;
+}
+
+.bf-modal__body {
+  font-size: 15px;
+  color: var(--color-muted);
+  line-height: 1.5;
+  margin-bottom: 30px;
+}
+
+.bf-modal__actions {
+  display: flex;
+  gap: 10px;
+}
+.bf-modal__actions .bf-btn {
+  flex: 1;
+  justify-content: center;
+}
