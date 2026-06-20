@@ -7,7 +7,8 @@ import EmptyState from '../components/ui/EmptyState.jsx';
 import './Home.css';
 
 export default function Home() {
-  const [notes, setNotes]   = useState([]);;
+  const [notes, setNotes]   = useState([]);
+  const [clusters,getClusters] = useState([]);
   const [loading, setLoading] = useState(true);
   const { addToast }        = useToast();
 

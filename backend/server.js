@@ -18,8 +18,10 @@ app.use(express.json());
 
 // Routes files
 const notes = require('./routes/notes');
+const clusters = require('./routes/clusters');
 // Mount Routers
 app.use('/api/v1/notes', notes);
+app.use('/api/v1/clusters',clusters);
 
 app.use(errorHandler);
 
