@@ -2,14 +2,14 @@ const express = require('express');
 const app = express();
 const dotenv = require('dotenv');
 const logger = require('./middleware/logger');
-const errorHandler = require('./middleware/errorhandler');
+const errorHandler = require('./middleware/errorHandler');
 
 // load env vars
-dotenv.config({path: './config/config.env'});
+dotenv.config({ path: './config/config.env' });
 const PORT = process.env.PORT;
 
 // Dev logging middleware
-if(process.env.NODE_ENV === 'development') {
+if (process.env.NODE_ENV === 'development') {
     app.use(logger);
 }
 
@@ -19,8 +19,8 @@ app.use(express.json());
 // Routes files
 const notes = require('./routes/notes');
 // Mount Routers
-app.use('/api/v1/notes',notes);
+app.use('/api/v1/notes', notes);
 
 app.use(errorHandler);
 
-app.listen(PORT,console.log(`Server running in ${process.env.NODE_ENV} on port ${PORT}`));
+app.listen(PORT, console.log(`Server running in ${process.env.NODE_ENV} on port ${PORT}`));

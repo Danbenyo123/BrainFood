@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<script src="./support.js"></script>
+</head>
+<body>
+<x-dc>
+<helmet>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Newsreader:ital,opsz,wght@0,6..72,300..600;1,6..72,300..500&family=Hanken+Grotesk:wght@400;500;600&display=swap" rel="stylesheet">
+<style>* { box-sizing: border-box; } body { margin: 0; } a { text-decoration: none; color: inherit; } input { outline: none; } input:focus { border-color: #2b2b2b !important; }</style>
+</helmet>
+<div style="min-height:100vh; width:100%; background:#e7e5df; box-sizing:border-box; padding:44px; font-family:'Hanken Grotesk', sans-serif; display:flex; flex-direction:column; align-items:center;">
+
+  <div style="position:relative; width:100%; max-width:1040px; min-height:620px; background:#faf8f4; border-radius:16px; box-shadow:0 1px 2px rgba(0,0,0,.04), 0 8px 30px rgba(0,0,0,.06); overflow:hidden;">
+
+    <!-- top bar -->
+    <div style="display:flex; align-items:center; justify-content:space-between; padding:26px 36px 0;">
+      <div style="font-family:'Newsreader', serif; font-style:italic; font-size:19px; color:#9a958c;">brainfood</div>
+      <a href="#" style="font-size:13px; color:#857f76; display:flex; align-items:center; gap:5px;" style-hover="color:#2b2b2b;">
+        <svg width="14" height="14" viewBox="0 0 24 24" fill="none"><polyline points="15 18 9 12 15 6" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"/></svg>
+        Notes
+      </a>
+    </div>
+
+    <!-- heading -->
+    <div style="padding:30px 36px 36px;">
+      <div style="font-family:'Newsreader', serif; font-size:42px; color:#2b2b2b; line-height:1;">Account</div>
+    </div>
+
+    <!-- content, two-col layout: nav left, content right -->
+    <div style="display:flex; gap:0; padding:0 36px 56px;">
+
+      <!-- left nav -->
+      <div style="flex:0 0 180px; display:flex; flex-direction:column; gap:2px; padding-right:32px; border-right:1px solid #ece8df;">
+        <div style="font-size:14px; font-weight:600; color:#2b2b2b; padding:8px 12px; border-radius:8px; background:#f1ede5; cursor:pointer;">Account</div>
+        <div style="font-size:14px; color:#857f76; padding:8px 12px; border-radius:8px; cursor:pointer;" style-hover="background:#f1ede5; color:#2b2b2b;">Notifications</div>
+        <div style="font-size:14px; color:#857f76; padding:8px 12px; border-radius:8px; cursor:pointer;" style-hover="background:#f1ede5; color:#2b2b2b;">Appearance</div>
+      </div>
+
+      <!-- right content -->
+      <div style="flex:1; padding-left:40px; max-width:480px;">
+
+        <!-- your account section -->
+        <div style="font-size:11px; letter-spacing:1px; text-transform:uppercase; color:#a8a39a; font-weight:600; margin-bottom:18px;">Your account</div>
+
+        <!-- email -->
+        <div style="display:flex; align-items:center; justify-content:space-between; padding:15px 0; border-bottom:1px solid #ece8df;">
+          <div>
+            <div style="font-size:12px; color:#a8a39a; margin-bottom:3px;">Email</div>
+            <div style="font-size:15px; color:#2b2b2b;">jsmith@example.com</div>
+          </div>
+          <a href="#" style="font-size:13px; color:#a8a39a; font-weight:500;" style-hover="color:#2b2b2b;">Change</a>
+        </div>
+
+        <!-- password -->
+        <div style="display:flex; align-items:center; justify-content:space-between; padding:15px 0; border-bottom:1px solid #ece8df;">
+          <div>
+            <div style="font-size:12px; color:#a8a39a; margin-bottom:3px;">Password</div>
+            <div style="font-size:16px; color:#2b2b2b; letter-spacing:3px;">········</div>
+          </div>
+          <a href="#" style="font-size:13px; color:#a8a39a; font-weight:500;" style-hover="color:#2b2b2b;">Change</a>
+        </div>
+
+        <!-- sign out -->
+        <div style="padding:24px 0 40px;">
+          <div style="display:inline-flex; align-items:center; font-weight:600; font-size:14px; color:#2b2b2b; border:1.5px solid #d8d4cb; border-radius:22px; padding:9px 22px; cursor:pointer; background:#faf8f4; transition:background .2s, color .2s, border-color .2s;" style-hover="background:#2b2b2b; color:#faf8f4; border-color:#2b2b2b;">Sign out</div>
+        </div>
+
+        <!-- danger zone -->
+        <div style="font-size:11px; letter-spacing:1px; text-transform:uppercase; color:#a8a39a; font-weight:600; margin-bottom:18px;">Danger zone</div>
+
+        <div style="display:flex; align-items:center; justify-content:space-between; padding:15px 0; border-bottom:1px solid #ece8df; border-top:1px solid #ece8df;">
+          <div>
+            <div style="font-size:15px; color:#2b2b2b; margin-bottom:3px;">Delete account</div>
+            <div style="font-size:13px; color:#a8a39a; line-height:1.5;">Permanently remove your account and all notes.</div>
+          </div>
+          <div style="display:flex; align-items:center; gap:6px; font-size:13px; color:#c4c0b7; cursor:pointer; transition:color .2s; margin-left:24px; flex:none;" style-hover="color:#c2502a;">
+            <svg width="13" height="13" viewBox="0 0 24 24" fill="none"><polyline points="3 6 5 6 21 6" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"/><path d="M8 6V4h8v2" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"/><path d="M19 6l-1 14H6L5 6" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"/></svg>
+            Delete
+          </div>
+        </div>
+
+      </div>
+    </div>
+
+  </div>
+</div>
+</x-dc>
+</body>
+</html>
